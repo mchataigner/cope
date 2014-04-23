@@ -5,7 +5,7 @@ name 'Cope';
 all_from 'lib/App/Cope.pm';
 
 # use 5.10 for given/when construct
-# perl_version '5.010';
+# perl_version '5.018';
 
 # requirements
 requires 'Env::Path';

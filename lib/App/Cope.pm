@@ -2,8 +2,10 @@
 package App::Cope;
 use strict;
 use warnings;
-use 5.010_000;
+use 5.018;
 use Carp;
+no if $] >= 5.018, warnings => "experimental::smartmatch";
+no if $] >= 5.018, warnings => "experimental::lexical_subs";
 
 our $VERSION = '0.99';
 
