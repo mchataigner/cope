@@ -2,6 +2,9 @@
 use App::Cope qw[run real_path colourise mark line];
 use App::Cope::Extra qw[user nonzero];
 use Term::ANSIColor;
+use 5.018;
+no if $] >= 5.018, warnings => "experimental::smartmatch";
+no if $] >= 5.018, warnings => "experimental::lexical_subs";
 
 # The diversity of ps's available output formats is useful, but makes
 # it annoyingly-difficult to parse. Instead of treating each line with
